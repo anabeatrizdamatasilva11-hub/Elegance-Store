@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegance Store — Acessórios & Bolsas Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+
+<body>
+ 
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">Elegance Store</a>
+      <ul class="nav__links">
+        <li><a href="#colecao">Coleção</a></li>
+        <li><a href="#oferta">Oferta</a></li>
+        <li><a href="#catalogo">Catalogo</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#catalogo" class="btn-primary nav__cta">Ver catalogo</a>
+      <button class="nav__hamburger" id="menuBtn" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile" id="mobileMenu">
+      <a href="#colecao">Coleção</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#catalogo">Catalogo</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+ 
+  <!-- ============================================================
+       CREDIBILITY STRIP
+  ============================================================ -->
+  <div class="cred-strip">
+    <div class="container cred-strip__inner">
+      <div class="cred-item"><i class="ti ti-package"></i> Entrega para todo o Brasil</div>
+      <div class="cred-item"><i class="ti ti-shield-check"></i> Garantia de qualidade</div>
+      <div class="cred-item"><i class="ti ti-refresh"></i> Troca sem burocracia</div>
+      <div class="cred-item"><i class="ti ti-lock"></i> Compra 100% segura</div>
+    </div>
+  </div>
+ 
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="hero__eyebrow animate">Nova coleção disponível agora</p>
+          <h1 class="hero__headline animate animate-delay-1">
+            Acessórios que <em>elevam</em> qualquer look — sem pagar o preço do luxo
+          </h1>
+          <p class="hero__sub animate animate-delay-2">
+            Bolsas e acessórios com materiais nobres, design exclusivo e acabamento premium. Para quem valoriza estilo de verdade, a partir de R$&nbsp;150.
+          </p>
+          <div class="hero__actions animate animate-delay-3">
+            <a href="#colecao" class="btn-primary">Ver coleção agora</a>
+            <a href="#como-funciona" class="btn-ghost">Como funciona</a>
+          </div>
+          <div class="hero__trust animate animate-delay-4">
+            <div>
+              <div class="hero__trust-num">100%</div>
+              <div class="hero__trust-label">Materiais selecionados</div>
+            </div>
+            <div>
+              <div class="hero__trust-num">R$150</div>
+              <div class="hero__trust-label">Preço inicial</div>
+            </div>
+            <div>
+              <div class="hero__trust-num">Exclusivo</div>
+              <div class="hero__trust-label">Designs únicos</div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="hero__visual animate animate-delay-2">
+          <div class="hero__image-placeholder">
+            <i class="ti ti-photo"></i>
+            <p>Foto do produto aqui</p>
+          </div>
+          <div class="hero__badge">
+            <i class="ti ti-star"></i>
+            <div class="hero__badge-text">
+              <strong>Edição limitada</strong>
+              Novas peças toda semana
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       PROBLEMA
+  ============================================================ -->
+  <section class="problem">
+    <div class="container">
+      <span class="tag animate">O problema</span>
+      <h2 class="section-title animate">Você já se sentiu assim?</h2>
+      <p class="section-sub animate">Encontrar acessórios bonitos que durem e caibam no orçamento não deveria ser tão difícil.</p>
+      <div class="problem__grid">
+        <div class="problem__card animate">
+          <i class="ti ti-mood-sad"></i>
+          <h3>Qualidade decepcionante</h3>
+          <p>Compra online e recebe algo que desbota ou descola em semanas.</p>
+        </div>
+        <div class="problem__card animate animate-delay-1">
+          <i class="ti ti-cash"></i>
+          <h3>Preço injusto</h3>
+          <p>Marcas de luxo cobram caro demais só pelo nome, não pela qualidade real.</p>
+        </div>
+        <div class="problem__card animate animate-delay-2">
+          <i class="ti ti-mood-empty"></i>
+          <h3>Design sem personalidade</h3>
+          <p>Tudo igual. Difícil achar algo que realmente representa seu estilo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       SOLUÇÃO / PRODUTOS
+  ============================================================ -->
+  <section class="solution" id="colecao">
+    <div class="container">
+      <span class="tag animate">A solução</span>
+      <h2 class="section-title animate">Design exclusivo.<br><em>Qualidade real.</em><br>Preço honesto.</h2>
+      <p class="section-sub animate">
+        A Elegance Store nasceu para preencher esse vazio: acessórios e bolsas com materiais nobres, acabamento cuidadoso e design de edição limitada — sem o markup absurdo das grandes marcas.
+      </p>
+      <div class="product-strip">
+        <div class="product-card animate">
+          <div class="product-icon"><i class="ti ti-diamond"></i></div>
+          <h4>Bolsas estruturadas</h4>
+          <p>Couro e materiais premium com caimento impecável para o dia a dia.</p>
+          <span class="product-price">A partir de R$&nbsp;220</span>
+        </div>
+        <div class="product-card animate animate-delay-1">
+          <div class="product-icon"><i class="ti ti-circle-dotted"></i></div>
+          <h4>Clutches e minibags</h4>
+          <p>Peças de destaque para ocasiões especiais e looks noturnos.</p>
+          <span class="product-price">A partir de R$&nbsp;150</span>
+        </div>
+        <div class="product-card animate animate-delay-2">
+          <div class="product-icon"><i class="ti ti-star"></i></div>
+          <h4>Edição limitada</h4>
+          <p>Carteiras, lenços e cintos com design exclusivo e quantidade reduzida.</p>
+          <span class="product-price">A partir de R$&nbsp;180</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       CATÁLOGO
+  ============================================================ -->
+  <section class="catalog" id="catalogo">
+    <div class="container">
+      <span class="tag animate">Catálogo</span>
+      <h2 class="section-title animate">Catálogo</h2>
+      <h3 class="catalog__headline animate animate-delay-1">Crie look que falam sobre sua personaçidade</h3>
+      <p class="section-sub animate animate-delay-2">Seu estilo ganha vida com nossas bolsas e acessórios, a Elegance Store foi feita para fazer parte do seu dia-a-dia!</p>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       BENEFÍCIOS
+  ============================================================ -->
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits__grid">
+        <div>
+          <span class="tag animate">Diferenciais</span>
+          <h2 class="section-title animate">Por que escolher a Elegance Store</h2>
+          <ul class="benefits__list">
+            <li class="animate">
+              <i class="ti ti-check"></i>
+              <div>
+                <strong>Materiais selecionados a dedo.</strong>
+                Couro, camurça e têxteis de alta durabilidade — você sente a diferença no primeiro toque.
+              </div>
+            </li>
+            <li class="animate animate-delay-1">
+              <i class="ti ti-check"></i>
+              <div>
+                <strong>Designs exclusivos, não genéricos.</strong>
+                Cada peça é desenvolvida internamente. Você dificilmente verá igual por aí.
+              </div>
+            </li>
+            <li class="animate animate-delay-2">
+              <i class="ti ti-check"></i>
+              <div>
+                <strong>Preço justo pelo que entrega.</strong>
+                Entre R$&nbsp;150 e R$&nbsp;400, você tem qualidade de boutique sem pagar preço de grife.
+              </div>
+            </li>
+            <li class="animate animate-delay-3">
+              <i class="ti ti-check"></i>
+              <div>
+                <strong>Compra rápida e segura.</strong>
+                Checkout simples, pagamento protegido e entrega rastreada para todo o Brasil.
+              </div>
+            </li>
+            <li class="animate animate-delay-4">
+              <i class="ti ti-check"></i>
+              <div>
+                <strong>Troca sem complicação.</strong>
+                Se não ficou como esperado, resolvemos sem burocracia.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="benefits__visual">
+            <div class="benefits__stat animate">
+              <div class="benefits__stat-num">R$150</div>
+              <div class="benefits__stat-label">Menor preço da coleção</div>
+            </div>
+            <div class="benefits__stat animate animate-delay-1">
+              <div class="benefits__stat-num">R$400</div>
+              <div class="benefits__stat-label">Maior valor — com qualidade real</div>
+            </div>
+            <div class="benefits__stat animate animate-delay-2">
+              <div class="benefits__stat-num">100%</div>
+              <div class="benefits__stat-label">Materiais selecionados</div>
+            </div>
+            <div class="benefits__stat animate animate-delay-3">
+              <div class="benefits__stat-num">Exclusivo</div>
+              <div class="benefits__stat-label">Cada design é único</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       COMO FUNCIONA
+  ============================================================ -->
+  <section class="how" id="como-funciona">
+    <div class="container">
+      <span class="tag animate">Como funciona</span>
+      <h2 class="section-title animate">Simples do início ao fim</h2>
+      <div class="steps">
+        <div class="step animate">
+          <div class="step__num">01</div>
+          <div class="step__content">
+            <h4>Explore a coleção</h4>
+            <p>Navegue pelos modelos disponíveis — cada peça tem fotos detalhadas, medidas e descrição dos materiais.</p>
+          </div>
+        </div>
+        <div class="step animate animate-delay-1">
+          <div class="step__num">02</div>
+          <div class="step__content">
+            <h4>Escolha e finalize</h4>
+            <p>Adicione ao carrinho, escolha a forma de pagamento e conclua o pedido em poucos cliques.</p>
+          </div>
+        </div>
+        <div class="step animate animate-delay-2">
+          <div class="step__num">03</div>
+          <div class="step__content">
+            <h4>Receba em casa</h4>
+            <p>Seu pedido é embalado com cuidado e enviado com rastreamento. Acompanhe cada etapa até a sua porta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       OFERTA
+  ============================================================ -->
+  <section class="offer" id="oferta">
+    <div class="container">
+      <span class="tag animate">A oferta</span>
+      <h2 class="section-title animate">O que você recebe</h2>
+      <div class="offer__box animate">
+        <h3>Coleção Elegance — peça avulsa ou kit</h3>
+        <ul class="offer__items">
+          <li><i class="ti ti-circle-check"></i> Acessório ou bolsa com material premium</li>
+          <li><i class="ti ti-circle-check"></i> Design exclusivo de edição limitada</li>
+          <li><i class="ti ti-circle-check"></i> Embalagem elegante, pronta para presente</li>
+          <li><i class="ti ti-circle-check"></i> Entrega rastreada para todo o Brasil</li>
+          <li><i class="ti ti-circle-check"></i> Garantia de qualidade e política de troca</li>
+        </ul>
+        <div class="offer__price">R$&nbsp;150 — R$&nbsp;400</div>
+        <div class="offer__price-note">Preço varia por modelo · Parcelamento disponível</div>
+        <a href="#" class="btn-primary">Quero minha peça</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       OBJEÇÕES
+  ============================================================ -->
+  <section class="objections">
+    <div class="container">
+      <span class="tag animate">Dúvidas</span>
+      <h2 class="section-title animate">Suas dúvidas, respondidas</h2>
+      <div class="objections__list animate">
+        <div class="objection">
+          <div class="objection__q">
+            Como sei que a qualidade é real?
+            <i class="ti ti-plus"></i>
+          </div>
+          <div class="objection__a">
+            Cada peça passa por controle de qualidade antes de ser enviada. Usamos fornecedores selecionados e você pode ver os materiais descritos em detalhes na página de cada produto.
+          </div>
+        </div>
+        <div class="objection">
+          <div class="objection__q">
+            E se eu não gostar quando receber?
+            <i class="ti ti-plus"></i>
+          </div>
+          <div class="objection__a">
+            Temos política de troca sem burocracia. Basta entrar em contato dentro do prazo e nós resolvemos — simples assim.
+          </div>
+        </div>
+        <div class="objection">
+          <div class="objection__q">
+            O envio é para todo o Brasil?
+            <i class="ti ti-plus"></i>
+          </div>
+          <div class="objection__a">
+            Sim. Enviamos para todos os estados com rastreamento. O prazo e custo de envio aparecem no checkout antes de você confirmar o pedido.
+          </div>
+        </div>
+        <div class="objection">
+          <div class="objection__q">
+            Posso parcelar?
+            <i class="ti ti-plus"></i>
+          </div>
+          <div class="objection__a">
+            Sim. Aceitamos os principais cartões de crédito com parcelamento. As condições aparecem na página de pagamento.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       FAQ
+  ============================================================ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <span class="tag animate">FAQ</span>
+      <h2 class="section-title animate">Perguntas frequentes</h2>
+      <div class="faq__grid">
+        <div class="faq__item animate">
+          <h4>Os produtos são originais e exclusivos?</h4>
+          <p>Sim. Todos os designs são desenvolvidos pela Elegance Store. Nenhum é cópia ou releitura de marcas existentes.</p>
+        </div>
+        <div class="faq__item animate animate-delay-1">
+          <h4>Qual é o prazo de entrega?</h4>
+          <p>Varia por região. No checkout você vê o prazo exato antes de confirmar. Capitais costumam receber em até 5 dias úteis.</p>
+        </div>
+        <div class="faq__item animate animate-delay-2">
+          <h4>A embalagem é adequada para presente?</h4>
+          <p>Sim. Todas as peças são enviadas em embalagem cuidadosa, ideal para dar de presente sem necessidade de reembalagem.</p>
+        </div>
+        <div class="faq__item animate animate-delay-3">
+          <h4>Vocês lançam novidades com frequência?</h4>
+          <p>Sim. A coleção é renovada periodicamente e os itens de edição limitada esgotam rápido. Não deixe para depois.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       CTA FINAL
+  ============================================================ -->
+  <section class="cta-final">
+    <div class="container">
+      <h2 class="animate">Seu estilo merece<br><em>mais do que o comum.</em></h2>
+      <p class="animate animate-delay-1">
+        Escolha uma peça que dure, surpreenda e diga quem você é — sem gastar mais do que o justo.
+      </p>
+      <a href="#colecao" class="btn-primary animate animate-delay-2">Ver coleção completa</a>
+      <p class="cta-final__trust animate animate-delay-3">
+        Entrega para todo o Brasil &nbsp;·&nbsp; Troca sem burocracia &nbsp;·&nbsp; Compra segura
+      </p>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo">Elegance Store</span>
+      <ul class="footer__links">
+        <li><a href="#">Coleção</a></li>
+        <li><a href="#">Troca</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Privacidade</a></li>
+      </ul>
+      <span class="footer__copy">© 2025 Elegance Store. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  </body>
+</html>
