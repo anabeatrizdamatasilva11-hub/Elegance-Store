@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo — Elegance Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="./catalogo.css" />
+ </head>
+<body>
+ 
+<!-- NAV -->
+<header class="nav">
+  <div class="nav__inner">
+    <a href="../Principal/index.html" class="nav__logo">Elegance Store</a>
+    <ul class="nav__links">
+      <li><a href="../Principal/index.html">Início</a></li>
+      <li><a href="#" class="active">Catálogo</a></li>
+      <li><a href="#">Novidades</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <button class="nav__cart" id="cartBtn">
+      <i class="ti ti-shopping-bag"></i>
+      Carrinho
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="nav__ham" id="hamBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+ 
+<!-- CATALOG HEADER -->
+<div class="cat-header">
+  <div class="cat-header__top">
+    <h1>Toda a <em>coleção</em></h1>
+    <span class="cat-header__count" id="countLabel">12 peças</span>
+  </div>
+</div>
+ 
+<!-- TOOLBAR -->
+<div class="toolbar">
+  <div class="search-wrap">
+    <i class="ti ti-search" aria-hidden="true"></i>
+    <input type="text" id="searchInput" placeholder="Buscar por nome ou categoria..." />
+  </div>
+  <div class="filter-pills" id="catPills">
+    <button class="pill active" data-cat="all">Todas</button>
+    <button class="pill" data-cat="bolsa">Bolsas</button>
+    <button class="pill" data-cat="clutch">Clutches</button>
+    <button class="pill" data-cat="carteira">Carteiras</button>
+    <button class="pill" data-cat="acessorio">Acessórios</button>
+  </div>
+  <div class="sort-wrap">
+    <select id="sortSelect">
+      <option value="default">Ordenar: Destaque</option>
+      <option value="price-asc">Menor preço</option>
+      <option value="price-desc">Maior preço</option>
+      <option value="name">Nome A–Z</option>
+      <option value="new">Mais novos</option>
+    </select>
+  </div>
+  <div class="view-btns">
+    <button class="view-btn active" id="gridBtn" title="Grade"><i class="ti ti-layout-grid"></i></button>
+    <button class="view-btn" id="listBtn" title="Lista"><i class="ti ti-list"></i></button>
+  </div>
+</div>
+ 
+<!-- MAIN LAYOUT -->
+<div class="catalog-wrap">
+ 
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-section">
+      <h3>Categoria</h3>
+      <div class="sidebar-opts" id="sidebarCats">
+        <div class="sidebar-opt active" data-cat="all">Todas as categorias <span>12</span></div>
+        <div class="sidebar-opt" data-cat="bolsa">Bolsas estruturadas <span>4</span></div>
+        <div class="sidebar-opt" data-cat="clutch">Clutches &amp; minibags <span>3</span></div>
+        <div class="sidebar-opt" data-cat="carteira">Carteiras <span>3</span></div>
+        <div class="sidebar-opt" data-cat="acessorio">Acessórios <span>2</span></div>
+      </div>
+    </div>
+ 
+    <div class="sidebar-section">
+      <h3>Faixa de preço</h3>
+      <div class="price-range-wrap">
+        <input type="range" id="priceRange" min="150" max="400" value="400" step="10" />
+        <div class="price-labels">
+          <span>R$ 150</span>
+          <span id="priceLabel">Até R$ 400</span>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="sidebar-section">
+      <h3>Cor predominante</h3>
+      <div class="color-swatches" id="colorSwatches">
+        <div class="swatch outline active" data-color="all" style="background:#faf9f7" title="Todas"></div>
+        <div class="swatch" data-color="preto" style="background:#1a1a18" title="Preto"></div>
+        <div class="swatch" data-color="caramelo" style="background:#c0894a" title="Caramelo"></div>
+        <div class="swatch" data-color="nude" style="background:#d4a98a" title="Nude"></div>
+        <div class="swatch" data-color="branco" style="background:#f0ede8;border:1px solid #ddd" title="Off-white"></div>
+        <div class="swatch" data-color="vinho" style="background:#7a2535" title="Vinho"></div>
+        <div class="swatch" data-color="verde" style="background:#4a6741" title="Verde"></div>
+      </div>
+    </div>
+ 
+    <div class="sidebar-section">
+      <h3>Disponibilidade</h3>
+      <div class="sidebar-opts">
+        <div class="sidebar-opt active" data-avail="all">Todos <span>12</span></div>
+        <div class="sidebar-opt" data-avail="limited">Edição limitada <span>5</span></div>
+        <div class="sidebar-opt" data-avail="sale">Em oferta <span>3</span></div>
+      </div>
+    </div>
+ 
+    <button class="clear-btn" id="clearBtn">Limpar filtros</button>
+  </aside>
+ 
+  <!-- GRID -->
+  <div class="grid-area">
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</div>
+ 
+<!-- PRODUCT MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <button class="modal__close" id="modalClose"><i class="ti ti-x"></i></button>
+    <div class="modal__img">
+      <i class="ti ti-shopping-bag"></i>
+      <p>Foto do produto</p>
+    </div>
+    <div class="modal__info">
+      <p class="modal__cat" id="mCat"></p>
+      <h2 class="modal__name" id="mName"></h2>
+      <div class="modal__price" id="mPrice"></div>
+      <p class="modal__desc" id="mDesc"></p>
+      <p class="modal__label">Cores disponíveis</p>
+      <div class="modal__colors" id="mColors"></div>
+      <ul class="modal__details" id="mDetails"></ul>
+      <div class="modal__actions">
+        <button class="btn-primary" id="mAddCart">Adicionar ao carrinho</button>
+        <button class="btn-outline" id="mWishlist">Adicionar à lista de desejos</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+</body>
+<script src="./catalogo.js"></script>
+</html>
+ 

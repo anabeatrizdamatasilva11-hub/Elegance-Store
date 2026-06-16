@@ -65,3 +65,18 @@
         nav.style.borderBottomColor = '';
       }
     }, { passive: true });
+
+    const btnPrimary = document.querySelector('.btn-primary');
+    if (btnPrimary) {
+      btnPrimary.addEventListener('click', () => {
+        btnPrimary.classList.add('animate', 'animatedelay2');
+      });
+    }
+
+    const verColecao = document.getElementById('verColecao');
+    if (verColecao) {
+      verColecao.addEventListener('click', () => {
+        verColecao.classList.add('animate', 'animate-delay-2');
+      });
+    }
+    
